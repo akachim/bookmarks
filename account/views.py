@@ -66,7 +66,7 @@ def register(request):
 
 @login_required
 def edit(request):
-    if request.methods =="POST":
+    if request.method=="POST":
         user_form =UserEditForm(instance=request.user,
                                 data=request.POST)
         
