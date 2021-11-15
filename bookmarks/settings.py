@@ -108,7 +108,8 @@ AUTHENTICATION_BACKENDS=[
     'account.authentication.EmailAuthBackend',
     'social_core.backends.facebook.FacebookOAuth2',
     'social_core.backends.twitter.TwitterOAuth',
-    'social_core.backends.google.GoogleOAuth2'
+    'social_core.backends.google.GoogleOAuth2',
+    'social_core.backends.instagram.InstagramOAuth2',
 ]
 
 # Internationalization
@@ -142,7 +143,10 @@ MEDIA_URL='/media/'
 MEDIA_ROOT=os.path.join(BASE_DIR, 'media/')
 
 #API AND KEYS
-SOCIAL_AUTH_TWITTER_KEY='kZKiOYXf9IXVOIJmlHGINAsdR'
-SOCIAL_AUTH_TWITTER_SECRET='Bkv8Zg4rlOzt09LCu6FLjEmWrhJGOjGQdpF30kjGfK2SqffjJB'
-SOCIAL_AUTH_GOOGLE_OAUTH_KEY='135489116787-ls1rg7si1441n5d74btf0kij0id3d62g.apps.googleusercontent.com'
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET='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'
+SOCIAL_AUTH_TWITTER_KEY='U7Ec18ZVElWd0tYnSosTsGUiB'
+SOCIAL_AUTH_TWITTER_SECRET='ATmIUJQlEdTzIGif4L8ei6Bp64llWw7YWbc8dfQlmodnLzMMXO'
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY='135489116787-88ebm1gbs7hklkjnqinne0d6v27ua03i.apps.googleusercontent.com'
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET='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'
+SOCIAL_AUTH_FACEBOOK_KEY='622318635454371'
+SOCIAL_AUTH_FACEBOOK_SECRET='17fe2afe3778681d2a1da5e48e98af29'
+SOCIAL_AUTH_FACEBOOK_SCOPE=['email']
